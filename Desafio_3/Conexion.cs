@@ -8,13 +8,13 @@ namespace Desafio_3
 {
     public class Conexion
     {
-        public Dispositivo A { get; set; }
-        public Dispositivo B { get; set; }
+        public Dispositivo A { get; set; } // Representa el primer dispositivo en la conexión
+        public Dispositivo B { get; set; } // Representa el segundo dispositivo en la conexión
 
         public Conexion(Dispositivo a, Dispositivo b)
         {
-            A = a;
-            B = b;
+            A = a; // Asigna el primer dispositivo
+            B = b; // Asigna el segundo dispositivo
         }
     }
 }

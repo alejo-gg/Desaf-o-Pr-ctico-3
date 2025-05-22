@@ -40,7 +40,6 @@
             btnPing = new Button();
             btnGuardar = new Button();
             btnCargar = new Button();
-            lblEstadoConexion = new Label();
             SuspendLayout();
             // 
             // label1
@@ -61,7 +60,7 @@
             label2.Location = new Point(23, 70);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(94, 15);
+            label2.Size = new Size(95, 15);
             label2.TabIndex = 1;
             label2.Text = "Tipo Dispositivo:";
             // 
@@ -178,22 +177,11 @@
             btnCargar.UseVisualStyleBackColor = true;
             btnCargar.Click += btnCargar_Click;
             // 
-            // lblEstadoConexion
-            // 
-            lblEstadoConexion.AutoSize = true;
-            lblEstadoConexion.Font = new Font("Segoe UI", 9F);
-            lblEstadoConexion.Location = new Point(23, 523);
-            lblEstadoConexion.Name = "lblEstadoConexion";
-            lblEstadoConexion.Size = new Size(115, 15);
-            lblEstadoConexion.TabIndex = 12;
-            lblEstadoConexion.Text = "Estado de Conexión.";
-            // 
             // SimuladorRed
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(930, 630);
-            Controls.Add(lblEstadoConexion);
             Controls.Add(btnCargar);
             Controls.Add(btnGuardar);
             Controls.Add(btnPing);
@@ -229,6 +217,5 @@
         private Button btnPing;
         private Button btnGuardar;
         private Button btnCargar;
-        private Label lblEstadoConexion;
     }
 }
